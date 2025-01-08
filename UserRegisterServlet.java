@@ -15,3 +15,23 @@ public class UserRegisterServlet extends HttpServlet {
         response.sendRedirect("success.jsp");
     }
 }
+import javax.servlet.*;
+import javax.servlet.http.*;
+import java.io.*;
+
+public class UserRegisterServlet extends HttpServlet {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        RequestDispatcher dispatcher = request.getRequestDispatcher("register.jsp");
+        dispatcher.forward(request, response);
+    }
+
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String name = request.getParameter("name");
+        String email = request.getParameter("email");
+        String password = request.getParameter("password");
+
+        // Insert user details into database (not implemented here)
+
+        response.sendRedirect("profile.jsp");
+    }
+}
