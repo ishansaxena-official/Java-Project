@@ -190,7 +190,6 @@ spring.jpa.hibernate.ddl-auto=update
 ## **Conclusion**
 The Online Learning Management System is a robust framework for managing educational content, user authentication, and student assessments. Built with Java and Spring Boot, this project is designed to streamline online education while providing an engaging experience for students and mentors alike.  
 
-For feedback or contributions, feel free to submit pull requests or open issues on the repository!  
 
 --- 
 
