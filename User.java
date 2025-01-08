@@ -65,3 +65,23 @@ public class User {
         this.role = role;
     }
 }
+
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotNull;
+
+public class User {
+
+    private Long id;
+
+    @NotNull
+    private String name;
+
+    @Email
+    @NotNull
+    private String email;
+
+    @NotNull
+    private String password;
+
+    // Getters and Setters
+}
